@@ -1,38 +1,396 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Aling-App{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Format-Class-Forms{
+  width: 40%;
+  height: 60vh;
+  border-radius: 2%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+  padding-bottom: 9%;
+  margin-top: 3%;
+}
+
+.Space-Between{
+  /* background-color: cyan; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 1%;
+}
+
+.Inputs-Forms{
+  width: 97%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2%;
+  border-radius: 5px;
+  border: solid 1px rgba(160, 160, 160, 0.692);
+  transition: 0.4s all;
+  color: rgb(95, 95, 95);
+}
+
+.Inputs-Forms:focus{
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.Container-Form{
+  /* background-color: darkmagenta; */
+  width: 100%;
+}
+
+.Button-Submit-Container-Form{
+  /* background-color: rgb(223, 255, 105); */
+  width: 100%;
+  margin-top: 8%;
+}
+
+.Button-Form-Submit{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(90, 90, 224);
+  border:none;
+  color: white;
+  font-size: 13pt;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Style-Labels-Forms{
+  font-size: 13pt;
+  font-weight: normal;
+  color: rgb(95, 95, 95);
+}
+
+.Tittle-font-Forms{
+  font-size: 25pt;
+  color: rgb(95, 95, 95);
+  font-weight: normal;
+}
+
+.Parrafo-Font-Form{
+  font-size: 15pt;
+  font-weight: lighter;
+}
+
+.Links-Style{
+  text-decoration: none;
+  color: rgb(109, 85, 248);
+  font-size: 13pt;
+}
+
+.Links-Style:visited{
+  color: rgb(109, 85, 248);
+}
+
+.Link-Container{
+  height: 40px;
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 5%;
+  font-size: 13pt;
+  font-weight: normal;
+}
+
+.Menu-Container-DashBoard{
+  /* background-color: crimson; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 1%;
+}
+
+.Dashboard-Panel-Notes{
+  /* background-color: cadetblue; */
+  width: 100vw;
+}
+
+.Container-icons{
+  /* background-color: darkkhaki; */
+  height:fit-content;
+  display: flex;
+}
+
+.User-Session-Container{
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14%;
+  height: fit-content;
+}
+
+.Tittle-User{
+  /* background-color: magenta; */
+  font-size: 13pt;
+  width: auto;
+  margin-right: 6%;
+  display: flex;
+  color: rgb(100, 100, 100);
+  font-weight: normal;
+}
+
+.Close-Session{
+  /* background-color: rgb(209, 154, 72); */
+  height:fit-content;
+  display: flex;
+  width: fit-content;
+  font-size: 20pt;
+  color: rgb(80, 80, 80);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.Icons-In-Bar{
+  /* background-color: rgb(255, 255, 255); */
+  font-size: 25pt;
+  margin-right: 7%;
+  height: fit-content;
+  color: rgb(80, 80, 80);
+  font-weight: bolder;
+}
+
+.Icon-Star{
+  /* background-color: rgb(255, 255, 255); */
+  font-size: 25pt;
+  margin-right: 7%;
+  height: fit-content;
+  color: rgb(162, 163, 62);
+  font-weight: bolder;
+}
+
+.Notes-Container{
+  /* background-color: hotpink; */
+  margin: 1%;
+}
+
+.Card-Container{
+  /* background-color: khaki; */
+  margin-bottom: 2%;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  height: fit-content;
+}
+
+.Card-Menu-Container{
+  /* background-color: lime; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  border-bottom: solid 2px rgb(179, 179, 179);
+  color: rgb(80, 80, 80);
+  font-weight: bolder;
+}
+
+.Body-Container-Card{
+  /* background-color: orangered; */
+  padding: 3%;
+  color: rgb(80, 80, 80);
+  font-weight: normal;
+}
+
+.Container-Icons-Note{
+  /* background-color: lightseagreen; */
+  width: 40%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Edit-icon-Note{
+  /* background-color: hotpink; */
+  margin-right: 15%;
+  font-size: 25pt;
+  cursor: pointer;
+}
+
+.Delete-icon-Note{
+  /* background-color: indianred; */
+  font-size: 25pt;
+  cursor: pointer;
+}
+
+.Container-Form-Add-Note{
+  /* background-color: rgb(177, 7, 7); */
+  justify-content: center;
+  align-items: center;
+}
+
+.Container-Form-Update-Note{
+  background-color: teal;
+}
+
+.Container-Button-AddNote{
+  /* background-color: rgb(231, 50, 50); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+
+.Button-AddNote{
+  width: 15%;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgb(90, 90, 224);
+  border:none;
+  color: white;
+  font-size: 10pt;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.Add-icon{
+  /* background-color: yellow; */
+  font-weight: bolder;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15pt;
+  margin-right: 7%;
+}
+
+.Card-Form-Add{
+  position: relative;
+  width: 40%;
+  height: 70vh;
+  background-color: white;
+  border-radius: 2%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.Intro-Tittle-Container-Add-Note{
+  /* background-color: violet; */
+  display: flex;
+}
+
+.Tittle-AddNote{
+  /* background-color: yellowgreen; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15pt;
+  color: rgb(54, 54, 54);
+}
+
+.Add-Icon-InForm{
+  /* background-color: tomato; */
+  font-size: 20pt;
+  margin-right: 5%;
+  color: rgb(54, 54, 54);
+}
+
+.Text-Area-Notes{
+  width: 95.5%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  border-radius: 5px;
+  border: solid 1px rgba(160, 160, 160, 0.692);
+  transition: 0.4s all;
+  color: rgb(95, 95, 95);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.Text-Area-Notes:focus{
+  outline: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.Input-Submit-AddNote{
+  /* background-color: seagreen; */
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 5%;
+}
+
+.Button-AddNote-Card{
+  background-color: rgb(90, 90, 224);
+  border:none;
+  text-decoration: none;
+  font-size: 13pt;
+  border-radius: 5px;
+  font-weight: normal;
+  width: 30%;
+  padding: 2%;
+  color: white;
+  cursor: pointer;
+}
+
+.Close-Button-Modal{
+  position: absolute;
+  top: -1.6%;
+  right: 0;
+  bottom: 0;
+  left: 95%;
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 13pt;
+  color: rgb(71, 71, 71);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+.Close-Button-Modal:hover{
+  background-color: rgb(247, 75, 75);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  /* background: grey; */
+  margin-bottom: 30px;
 }
