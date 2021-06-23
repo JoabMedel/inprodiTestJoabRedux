@@ -16,6 +16,10 @@ const UserDashBoard = ({LogedUser,showNotesDB}) => {
         showNotesDB(LogedUser._id)
     },[])
 
+    const offSession = () =>{
+        window.location.reload()
+    }
+
     return (
         <>
             <div className="Dashboard-Panel-Notes">
@@ -31,7 +35,7 @@ const UserDashBoard = ({LogedUser,showNotesDB}) => {
                             <h1 className="Tittle-User">
                                 {detectNameUser}
                             </h1>
-                            <Link className="Close-Session" to="/">
+                            <Link className="Close-Session" to="/" onClick={()=>offSession()}>
                                 <FiPower className="Icon-Close-Session"/>
                             </Link>
                         </div>
