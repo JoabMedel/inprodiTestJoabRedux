@@ -44,7 +44,14 @@ const Login = ({UserIsLoged}) => {
                 history.push("/userpanel");
             }
         }catch(error){
-            if(error.response.status===404){
+            if(error.response===undefined){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Ocurrio un problema intente mas tarde'
+                });
+            }
+            else if(error.response.status===404){
                 Swal.fire({
                     icon: 'error',
                     title: 'Ingresa un correo electrónico válido',
@@ -61,7 +68,10 @@ const Login = ({UserIsLoged}) => {
                 DetectErrorPassword.current.style.border='solid 1px rgba(221, 37, 37, 0.692)'
                 DetectErrorPassword.current.style.color='rgba(221, 37, 37, 0.692)'
             }else{
-                console.log("Ocurrio un problema")
+                Swal.fire({
+                    icon: 'error',
+                    title: 'La contraseña ingresada es incorrecta',
+                });
             }
         }
         

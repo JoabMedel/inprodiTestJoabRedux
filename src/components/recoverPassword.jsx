@@ -32,7 +32,14 @@ const RecoverPassword = ({emailOk}) => {
                 history.push("/ressetpassword");
             }
         }catch(error){
-            if(error.response.status===404){
+            if(error.response===undefined){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Ocurrio un problema intente mas tarde'
+                });
+            }
+            else if(error.response.status===404){
                 Swal.fire({
                     icon: 'error',
                     title: 'Ingresa un correo electrónico válido',
